@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF=8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Assignment-3</title>
+    <link rel="stylesheet"href="Prerana1008.css">
+</head>
+<body>
+    <h1>User Sign up</h1>
+    <form action="/signup" method="post" enctype="multipart/form-data">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+        
+        <label for="branch">Branch:</label>
+        <select id="branch" name="branch">
+            <option value="branch1">CSE</option>
+            <option value="branch2">CE</option>
+            <option value="branch3">ECE</option>
+            <option value="branch3">FET</option>    
+            <option value="branch3">IE</option>
+            <option value="branch3">MCD</option>
+        </select><br><br>
+        
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label><br><br>
+        
+        <label for="photo">Photo:</label>
+        <input type="file" id="photo" name="photo" accept="image/*" required><br><br>
+        
+        <input type="submit" value="Signup">
+    </form>
+
+    <h1>User Sign in</h1>
+    <form action="/signin" method="post">
+        <label for="signinEmail">E-mail:</label>
+        <input type="email" id="signinEmail" name="signinEmail" required><br><br>
+        
+        <label for="signinPassword">Password:</label>
+        <input type="password" id="signinPassword" name="signinPassword" required><br><br>
+        <input type="submit" value="Signin">
+    </form>
+</body>
+</html>   
